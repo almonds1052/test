@@ -10,8 +10,29 @@
   gtag('config', 'G-8YLXJV7J5X');
 </script>
 <title>Homepage</title>
+<script>
+function shareFB(){
+  alert("已經分享到FB");
+  gtag("event", "分享", {
+  	"article_title": "我的文章",
+  	"social_platform": "Facebook"
+  });
+}
+function shareLINE(){
+  alert("已經分享到LINE");
+  gtag("event", "分享", {
+	"article_title": "我的文章",
+	"social_platform": "LINE"
+});
+}
+</script>
 </head>
 <body>
+  <button onclick="shareFB()">分享到 FB</button>
+  <button onclick="shareLINE()">分享到 LINE</button>
+
+
+  
   Hello Google Analytics <br/>
   <a href="https://instagram.com/">Instagram</a>
   <br/>
